@@ -8,5 +8,5 @@ Dentro do modelo de arquitetura Model-View-Cotroller (**MVC**), criei uma **Loja
 
 ## LivrariaAPI Local Host
 
-- dotnet watch run
+- **Comando CLI**: dotnet watch run
 - **Swagger**: [Local Host API](http://localhost:5111/swagger/index.html)
