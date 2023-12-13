@@ -5,3 +5,8 @@ Dentro do modelo de arquitetura Model-View-Cotroller (**MVC**), criei uma **Loja
 ## Desafio de Projeto Digital Innovation One
 
 **Desafio de Projeto**: [Criando seu E-commerce de Livros em C# e Angular](https://web.dio.me/lab/criando-seu-e-commerce-de-livros-em-c-e-angular/learning/ef7c8714-449c-4038-9d3b-84ae1e0c35e2)
+
+## LivrariaAPI Local Host
+
+- dotnet watch run
+- **Swagger**: [Local Host API](http://localhost:5111/swagger/index.html)
