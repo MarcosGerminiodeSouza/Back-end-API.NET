@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bOIdFBexa6g3lP9u0m++UqCH60F2XNBaWE4gmfDHgZ95XQMt9UAopZkgAKQ/ZM0IZm0cl6WZj1MvnHtLyAKTUg==",
+  "dgSpecHash": "B8zLt4Znn4edmEjDLGN1jhm0Q7fAH6l4YxH1OX0L2HjDkrSG0w485g+NKKe81w4wUaJOmlBBusUToPPbJRgkyw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Home\\Workspace\\Github\\Angular-C-Sharp-E-Comerce-de-Livros\\Back-end\\LivrariaAPI\\LivrariaAPI.csproj",
+  "projectFilePath": "C:\\Users\\Home\\Workspace\\Github\\C-Sharp__Angular-Livraria-do-Marcos\\LivrariaAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Home\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.13\\microsoft.aspnetcore.openapi.7.0.13.nupkg.sha512",
     "C:\\Users\\Home\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.13\\microsoft.entityframeworkcore.7.0.13.nupkg.sha512",
