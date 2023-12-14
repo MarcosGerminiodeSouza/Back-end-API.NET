@@ -1,4 +1,9 @@
 .d-flex {
+  background-color: #a3a6ce;
+  padding: 0rem 1rem 0rem .5rem;
+}
+
+.btn {
   background-color: #f1f1f1;
-  padding: .5rem 1rem 0px .5rem;
+  margin-top: 5px;
 }
