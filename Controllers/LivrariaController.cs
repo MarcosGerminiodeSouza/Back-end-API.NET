@@ -27,7 +27,7 @@ namespace LivrariaAPI.Controllers
             _contexto.Livros.Add(new Livro { Id = 2, Nome = "O MUNDO DE SOFIA", Autor = "Jostein Gaarder", Categoria = "Românce", Preco = 20, Quantidade = 6, Imagem = "img2" });
             _contexto.Livros.Add(new Livro { Id = 3, Nome = "ARCÈNE LUPIN O Ladrão de Casaca", Autor = "Maurice Leblanc", Categoria = "Ficção", Preco = 30, Quantidade = 10, Imagem = "img3" });
             _contexto.Livros.Add(new Livro { Id = 4, Nome = "INTRODUÇÃO À PROGRAMAÇÃO", Autor = "Anita Lopes", Categoria = "Programação", Preco = 120, Quantidade = 9, Imagem = "img4" });
-            _contexto.Livros.Add(new Livro { Id = 5, Nome = "Guia Front-End", Autor = "Casa do Código", Categoria = "Programação", Preco = 110, Quantidade = 8, Imagem = "img5" });
+            _contexto.Livros.Add(new Livro { Id = 5, Nome = "Guia Front-End", Autor = "Diego ES", Categoria = "Programação", Preco = 110, Quantidade = 8, Imagem = "img5" });
             _contexto.Livros.Add(new Livro { Id = 6, Nome = "Aprenda a Programar com C#", Autor = "António Trigo", Categoria = "Programação", Preco = 130, Quantidade = 10, Imagem = "img6" });
             _contexto.Livros.Add(new Livro { Id = 7, Nome = "Use a Cabeça! C#", Autor = "Andrew Stellman", Categoria = "Programação", Preco = 100, Quantidade = 5, Imagem = "img7" });
             _contexto.Livros.Add(new Livro { Id = 8, Nome = "Introdução à linguagem SQL", Autor = "Tomas Nield", Categoria = "Banco de Dados", Preco = 180, Quantidade = 10, Imagem = "img8" });
