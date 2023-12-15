@@ -79,3 +79,8 @@ C:\Users\Home\Workspace\Github\C-Sharp__Angular-Livraria-do-Marcos\obj\Debug\net
 C:\Users\Home\Workspace\Github\C-Sharp__Angular-Livraria-do-Marcos\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\Home\Workspace\Github\C-Sharp__Angular-Livraria-do-Marcos\bin\Debug\net7.0\MySqlConnector.dll
 C:\Users\Home\Workspace\Github\C-Sharp__Angular-Livraria-do-Marcos\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\Home\Workspace\Github\C-Sharp__Angular-Livraria-do-Marcos\bin\Debug\net7.0\Humanizer.dll
+C:\Users\Home\Workspace\Github\C-Sharp__Angular-Livraria-do-Marcos\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Home\Workspace\Github\C-Sharp__Angular-Livraria-do-Marcos\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Home\Workspace\Github\C-Sharp__Angular-Livraria-do-Marcos\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\Home\Workspace\Github\C-Sharp__Angular-Livraria-do-Marcos\bin\Debug\net7.0\System.CodeDom.dll

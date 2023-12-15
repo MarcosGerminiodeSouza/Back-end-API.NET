@@ -1,10 +1,17 @@
+using LivrariaAPI.Models.Context;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+string mySqlConexao = builder.Configuration.GetConnectionString("ConexaoMySQL");
+
+builder.Services.AddDbContextPool<LivrariaDbContext>(options =>
+        options.UseMySql(mySqlConexao, ServerVersion.AutoDetect(mySqlConexao)));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
