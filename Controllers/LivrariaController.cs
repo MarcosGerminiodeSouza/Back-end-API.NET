@@ -43,17 +43,17 @@ namespace LivrariaAPI.Controllers
             _contexto.Livros.Add(livro);
             await _contexto.SaveChangesAsync();
 
-            return CreatedAtAction(nameof(ObterLivroPorId), new { id = livro.Id }, livro);
+            return CreatedAtAction(nameof(ObterPorId), new { id = livro.Id }, livro);
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Livro>>> ObterListaDeLivros()
+        public async Task<ActionResult<IEnumerable<Livro>>> ObterTudo()
         {
             return await _contexto.Livros.ToListAsync();
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Livro>> ObterLivroPorId(int id)
+        public async Task<ActionResult<Livro>> ObterPorId(int id)
         {
             var item = await _contexto.Livros.FindAsync(id.ToString());
 
