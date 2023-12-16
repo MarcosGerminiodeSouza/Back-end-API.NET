@@ -1,11 +1,12 @@
+import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Injectable} from "@angular/core";
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import {Livro} from "./model/livro.model";
-import { Observable, throwError } from 'rxjs';
-import { catchError, map, retry } from 'rxjs/operators';
+import {Livro} from "./entities/livro";
+//import { Observable, throwError } from 'rxjs';
+//import { catchError, map, retry } from 'rxjs/operators';
 
 
-export const books: Livro[] = [
+export const livros: Livro[] =
+[
   { id: '1', nome: 'CHERLOCK HOMES', autor: 'Arthur Conan Doyle', categoria: "Mistério", preco: 80, quantidade: 5, imagem: "img1" },
   { id: '2', nome: 'O MUNDO DE SOFIA', autor: 'Jostein Gaarder', categoria: "Românce", preco: 20, quantidade: 6, imagem: "img2" },
   { id: '3', nome: 'ARCÈNE LUPIN O Ladrão de Casaca', autor: 'Maurice Leblanc', categoria: "Ficção", preco: 30, quantidade: 10, imagem: "img3" },
@@ -15,32 +16,24 @@ export const books: Livro[] = [
   { id: '7', nome: 'Use a Cabeça! C#', autor: 'Andrew Stellman', categoria: "Programação", preco: 100, quantidade: 5, imagem: "img7" },
   { id: '8', nome: 'Introdução à linguagem SQL', autor: 'Tomas Nield', categoria: "Banco de Dados", preco: 180, quantidade: 10, imagem: "img8" },
   { id: '9', nome: 'MySQL Aprendendo na Prática', autor: 'Sérgio Luiz Tonsig', categoria: "Banco de Dados", preco: 150, quantidade: 7, imagem: "img9" },
-  { id: '10', nome: 'O PODER DO HÁBITO', autor: 'Charles Duhigg', categoria: "Autoajuda", preco: 50, quantidade: 6, imagem: "img10" },
-
-  ];
+  { id: '10', nome: 'O PODER DO HÁBITO', autor: 'Charles Duhigg', categoria: "Autoajuda", preco: 50, quantidade: 6, imagem: "img10" }
+];
 
 @Injectable()
 
+//http://localhost:5111/swagger/index.html
+export class LivrariaAPIServico {
 
-export class BooksService {
-
-  private url = 'https://localhost:44382/api/bookstore';  // URL to web api
+  private url = 'http://localhost:5111/swagger';  // URL to web api
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   }
 
-   constructor( private http: HttpClient){}
+  constructor(private http: HttpClient) { }
 
-
-    // getBooks(){
-    //     return books;
-    // }
-
-    getBooks() {
-      return this.http.get(this.url)
-
-
-    }
+  getBooks() {
+    return this.http.get(this.url)
+  }
 
 }

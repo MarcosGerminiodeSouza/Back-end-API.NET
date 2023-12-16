@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Book } from '../model/books.model';
+import { Livro } from '../entities/livro';
 
 @Component({
   selector: 'app-product-item',
@@ -9,7 +9,7 @@ import { Book } from '../model/books.model';
 export class ProductItemComponent implements OnInit {
 
   @Input()
-  livro!: Book;
+  livro!: Livro;
   constructor() { }
 
   ngOnInit(): void {
