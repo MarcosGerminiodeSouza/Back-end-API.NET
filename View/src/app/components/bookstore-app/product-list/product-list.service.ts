@@ -24,7 +24,7 @@ export const livros: Livro[] =
 //http://localhost:5111/swagger/index.html
 export class LivrariaAPIServico {
 
-  private url = 'http://localhost:5111/swagger';  // URL to web api
+  private url = 'http://localhost:5111/api/Livraria';  // URL to web api
 
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
