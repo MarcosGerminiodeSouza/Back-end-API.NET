@@ -15,9 +15,9 @@ namespace LivrariaAPI.Controllers
     {
         private readonly LivrariaDbContext _context;
 
-        //Injeção de dependencias.
         public LivrariaController(LivrariaDbContext context)
         {
+            //Controller: Injeção de dependencias.
             _context = context;
         }
 
@@ -28,6 +28,7 @@ namespace LivrariaAPI.Controllers
             await _context.SaveChangesAsync();
 
             return CreatedAtAction(nameof(ObterLivro), new {id = livro.Id}, livro);
+            //http://localhost:5111/api/Livraria/Novo
         }
 
         [HttpGet("Listar/{id}")]
@@ -39,6 +40,7 @@ namespace LivrariaAPI.Controllers
                 return NotFound();
 
             return Ok(livroBanco);
+            //http://localhost:5111/api/Livraria/Listar/10
         }
 
         [HttpGet("Listar/")]
@@ -47,6 +49,7 @@ namespace LivrariaAPI.Controllers
             var livroBanco = await _context.Livros.ToListAsync();
 
             return Ok(livroBanco);
+            //http://localhost:5111/api/Livraria/Listar
         }
 
         [HttpPut("Atualizar/{id}")]
@@ -68,6 +71,7 @@ namespace LivrariaAPI.Controllers
             await _context.SaveChangesAsync();
 
             return Ok(livroBanco);
+            //http://localhost:5111/api/Livraria/Atualizar/13
         }
 
         [HttpDelete("Apagar/{id}")]
@@ -82,6 +86,7 @@ namespace LivrariaAPI.Controllers
             await _context.SaveChangesAsync();
 
             return NoContent();
+            //http://localhost:5111/api/Livraria/Apagar/14
         }
     }
 }
