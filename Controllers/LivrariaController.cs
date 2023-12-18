@@ -1,6 +1,6 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using LivrariaAPI.Models.Context;
 using LivrariaAPI.Models.Entities;
@@ -17,21 +17,19 @@ namespace LivrariaAPI.Controllers
 
         public LivrariaController(LivrariaDbContext context)
         {
-            //Controller: Injeção de dependencias.
             _context = context;
         }
 
-        [HttpPost("Novo")]
+        [HttpPost]
         public async Task<ActionResult<Livro>> CriarLivro(Livro livro)
         {
             _context.Add(livro);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction(nameof(ObterLivro), new {id = livro.Id}, livro);
-            //http://localhost:5111/api/Livraria/Novo
         }
 
-        [HttpGet("Listar/{id}")]
+        [HttpGet("{id}")]
         public async Task<ActionResult<Livro>> ObterLivro(int id)
         {
             var livroBanco = await _context.Livros.FindAsync(id);
@@ -40,19 +38,17 @@ namespace LivrariaAPI.Controllers
                 return NotFound();
 
             return Ok(livroBanco);
-            //http://localhost:5111/api/Livraria/Listar/10
         }
 
-        [HttpGet("Listar/")]
+        [HttpGet]
         public async Task<ActionResult<IEnumerable<Livro>>> ObterLivros()
         {
             var livroBanco = await _context.Livros.ToListAsync();
 
             return Ok(livroBanco);
-            //http://localhost:5111/api/Livraria/Listar
         }
 
-        [HttpPut("Atualizar/{id}")]
+        [HttpPut("{id}")]
         public async Task<ActionResult<Livro>> AtualizarLivro(int id, Livro livro)
         {
             var livroBanco = await _context.Livros.FindAsync(id);
@@ -71,10 +67,9 @@ namespace LivrariaAPI.Controllers
             await _context.SaveChangesAsync();
 
             return Ok(livroBanco);
-            //http://localhost:5111/api/Livraria/Atualizar/13
         }
 
-        [HttpDelete("Apagar/{id}")]
+        [HttpDelete("{id}")]
         public async Task<ActionResult<Livro>> DeletarLivro(int id)
         {
             var livroBanco = await _context.Livros.FindAsync(id);
@@ -86,7 +81,6 @@ namespace LivrariaAPI.Controllers
             await _context.SaveChangesAsync();
 
             return NoContent();
-            //http://localhost:5111/api/Livraria/Apagar/14
         }
     }
 }
