@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rq1TE9Qb1Zee7ocoPzAs5NJik9B56448kV7toB3IuF0xzgaPqaKFFF9GpnA01Ig49Z7m+3M4SdoTpnU9o/5g0w==",
+  "dgSpecHash": "rA2EBpXDCeV8l7opasaHfEr9v926mcltSc8qHqYqK+FKgAllR0bhD/yzsyzlVRXLExT4FYYnzFBTrZa0jVG8Hg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Home\\Workspace\\Github\\C-Sharp__Angular-Livraria-do-Marcos\\LivrariaAPI.csproj",
+  "projectFilePath": "C:\\Users\\Home\\Workspace\\Github\\C-Sharp__Angular-Livraria-do-Marcos\\LivrariaAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Home\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Home\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.13\\microsoft.aspnetcore.openapi.7.0.13.nupkg.sha512",

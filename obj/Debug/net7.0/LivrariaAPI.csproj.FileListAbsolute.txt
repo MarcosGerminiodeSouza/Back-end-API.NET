@@ -50,7 +50,6 @@ C:\Users\Home\Workspace\Github\C-Sharp__Angular-Livraria-do-Marcos\bin\Debug\net
 C:\Users\Home\Workspace\Github\C-Sharp__Angular-Livraria-do-Marcos\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\Home\Workspace\Github\C-Sharp__Angular-Livraria-do-Marcos\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\Home\Workspace\Github\C-Sharp__Angular-Livraria-do-Marcos\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\Home\Workspace\Github\C-Sharp__Angular-Livraria-do-Marcos\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\Home\Workspace\Github\C-Sharp__Angular-Livraria-do-Marcos\bin\Debug\net7.0\Microsoft.OpenApi.dll
 C:\Users\Home\Workspace\Github\C-Sharp__Angular-Livraria-do-Marcos\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\Home\Workspace\Github\C-Sharp__Angular-Livraria-do-Marcos\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll

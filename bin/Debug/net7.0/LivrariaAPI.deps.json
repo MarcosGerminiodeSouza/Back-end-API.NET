@@ -9,9 +9,7 @@
       "LivrariaAPI/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.OpenApi": "7.0.13",
-          "Microsoft.EntityFrameworkCore": "7.0.13",
           "Microsoft.EntityFrameworkCore.Design": "7.0.13",
-          "Microsoft.EntityFrameworkCore.InMemory": "7.0.13",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.13",
           "Pomelo.EntityFrameworkCore.MySql": "7.0.0",
           "Swashbuckle.AspNetCore": "6.5.0"
@@ -72,17 +70,6 @@
         },
         "runtime": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Design.dll": {
-            "assemblyVersion": "7.0.13.0",
-            "fileVersion": "7.0.1323.51806"
-          }
-        }
-      },
-      "Microsoft.EntityFrameworkCore.InMemory/7.0.13": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.13"
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
             "assemblyVersion": "7.0.13.0",
             "fileVersion": "7.0.1323.51806"
           }
@@ -299,13 +286,6 @@
       "sha512": "sha512-3DlpSAxQhuxlhblySbM5ujxHALRi5m25ORPGnKKW4LCY1CPleCStdMSRnUB53vnhWDJUX12eIIvprajN++c2Ag==",
       "path": "microsoft.entityframeworkcore.design/7.0.13",
       "hashPath": "microsoft.entityframeworkcore.design.7.0.13.nupkg.sha512"
-    },
-    "Microsoft.EntityFrameworkCore.InMemory/7.0.13": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-HFSMOeNNfCQ16Moy6Rv99/xhVOzW27ND9YcoDJrQ9KocJP8ZONuz5OtTJg9pfKFKblBPj6LWNI496VrAWkECyg==",
-      "path": "microsoft.entityframeworkcore.inmemory/7.0.13",
-      "hashPath": "microsoft.entityframeworkcore.inmemory.7.0.13.nupkg.sha512"
     },
     "Microsoft.EntityFrameworkCore.Relational/7.0.13": {
       "type": "package",
