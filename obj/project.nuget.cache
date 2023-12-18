@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MFBKCUerGBMJTTNhEhyKZbLdMr4krDvxj2BIduS622Wb1OjpnHlwQASSKikvdBj9XUMIx5cv8KEhOP2dNO9njg==",
+  "dgSpecHash": "rq1TE9Qb1Zee7ocoPzAs5NJik9B56448kV7toB3IuF0xzgaPqaKFFF9GpnA01Ig49Z7m+3M4SdoTpnU9o/5g0w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Home\\Workspace\\Github\\C-Sharp__Angular-Livraria-do-Marcos\\LivrariaAPI.csproj",
+  "projectFilePath": "c:\\Users\\Home\\Workspace\\Github\\C-Sharp__Angular-Livraria-do-Marcos\\LivrariaAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Home\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Home\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.13\\microsoft.aspnetcore.openapi.7.0.13.nupkg.sha512",
@@ -10,7 +10,6 @@
     "C:\\Users\\Home\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.13\\microsoft.entityframeworkcore.abstractions.7.0.13.nupkg.sha512",
     "C:\\Users\\Home\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.13\\microsoft.entityframeworkcore.analyzers.7.0.13.nupkg.sha512",
     "C:\\Users\\Home\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.13\\microsoft.entityframeworkcore.design.7.0.13.nupkg.sha512",
-    "C:\\Users\\Home\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\7.0.13\\microsoft.entityframeworkcore.inmemory.7.0.13.nupkg.sha512",
     "C:\\Users\\Home\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.13\\microsoft.entityframeworkcore.relational.7.0.13.nupkg.sha512",
     "C:\\Users\\Home\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\7.0.13\\microsoft.entityframeworkcore.tools.7.0.13.nupkg.sha512",
     "C:\\Users\\Home\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
