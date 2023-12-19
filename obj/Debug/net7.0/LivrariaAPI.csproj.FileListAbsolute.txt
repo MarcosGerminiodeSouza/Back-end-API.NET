@@ -36,12 +36,6 @@ C:\Users\Home\Workspace\Github\Angular-C-Sharp-E-Comerce-de-Livros\Back-end\Livr
 C:\Users\Home\Workspace\Github\Angular-C-Sharp-E-Comerce-de-Livros\Back-end\LivrariaAPI\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\Home\Workspace\Github\C-Sharp__Angular-Livraria-do-Marcos\bin\Debug\net7.0\appsettings.Development.json
 C:\Users\Home\Workspace\Github\C-Sharp__Angular-Livraria-do-Marcos\bin\Debug\net7.0\appsettings.json
-C:\Users\Home\Workspace\Github\C-Sharp__Angular-Livraria-do-Marcos\bin\Debug\net7.0\View\angular.json
-C:\Users\Home\Workspace\Github\C-Sharp__Angular-Livraria-do-Marcos\bin\Debug\net7.0\View\package-lock.json
-C:\Users\Home\Workspace\Github\C-Sharp__Angular-Livraria-do-Marcos\bin\Debug\net7.0\View\package.json
-C:\Users\Home\Workspace\Github\C-Sharp__Angular-Livraria-do-Marcos\bin\Debug\net7.0\View\tsconfig.app.json
-C:\Users\Home\Workspace\Github\C-Sharp__Angular-Livraria-do-Marcos\bin\Debug\net7.0\View\tsconfig.json
-C:\Users\Home\Workspace\Github\C-Sharp__Angular-Livraria-do-Marcos\bin\Debug\net7.0\View\tsconfig.spec.json
 C:\Users\Home\Workspace\Github\C-Sharp__Angular-Livraria-do-Marcos\bin\Debug\net7.0\LivrariaAPI.exe
 C:\Users\Home\Workspace\Github\C-Sharp__Angular-Livraria-do-Marcos\bin\Debug\net7.0\LivrariaAPI.deps.json
 C:\Users\Home\Workspace\Github\C-Sharp__Angular-Livraria-do-Marcos\bin\Debug\net7.0\LivrariaAPI.runtimeconfig.json

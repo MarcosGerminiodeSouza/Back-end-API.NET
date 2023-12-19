@@ -26,7 +26,7 @@ namespace LivrariaAPI.Migrations
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Categoria = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    Preco = table.Column<decimal>(type: "decimal(65,30)", nullable: false),
+                    Preco = table.Column<decimal>(type: "decimal(5,2)", nullable: false),
                     Quantidade = table.Column<int>(type: "int", nullable: false),
                     Imagem = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4")

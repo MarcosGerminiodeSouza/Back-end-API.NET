@@ -37,7 +37,7 @@ namespace LivrariaAPI.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<decimal>("Preco")
-                        .HasColumnType("decimal(65,30)");
+                        .HasColumnType("decimal(5, 2)");
 
                     b.Property<int>("Quantidade")
                         .HasColumnType("int");
