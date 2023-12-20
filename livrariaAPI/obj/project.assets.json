@@ -1487,11 +1487,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Home\\Workspace\\Github\\C-Sharp__Angular-Livraria-do-Marcos\\LivrariaAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Home\\Desktop\\C-Sharp__Angular-Livraria-do-Marcos\\LivrariaAPI\\LivrariaAPI.csproj",
       "projectName": "LivrariaAPI",
-      "projectPath": "c:\\Users\\Home\\Workspace\\Github\\C-Sharp__Angular-Livraria-do-Marcos\\LivrariaAPI.csproj",
+      "projectPath": "C:\\Users\\Home\\Desktop\\C-Sharp__Angular-Livraria-do-Marcos\\LivrariaAPI\\LivrariaAPI.csproj",
       "packagesPath": "C:\\Users\\Home\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Home\\Workspace\\Github\\C-Sharp__Angular-Livraria-do-Marcos\\obj\\",
+      "outputPath": "C:\\Users\\Home\\Desktop\\C-Sharp__Angular-Livraria-do-Marcos\\LivrariaAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Home\\AppData\\Roaming\\NuGet\\NuGet.Config",
