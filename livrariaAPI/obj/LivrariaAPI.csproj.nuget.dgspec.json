@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Home\\Desktop\\C-Sharp__Angular-Livraria-do-Marcos\\LivrariaAPI\\LivrariaAPI.csproj": {}
+    "C:\\Users\\Home\\Desktop\\C-Sharp-EF-MySQL-APIBooks\\LivrariaAPI\\LivrariaAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Home\\Desktop\\C-Sharp__Angular-Livraria-do-Marcos\\LivrariaAPI\\LivrariaAPI.csproj": {
+    "C:\\Users\\Home\\Desktop\\C-Sharp-EF-MySQL-APIBooks\\LivrariaAPI\\LivrariaAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Home\\Desktop\\C-Sharp__Angular-Livraria-do-Marcos\\LivrariaAPI\\LivrariaAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Home\\Desktop\\C-Sharp-EF-MySQL-APIBooks\\LivrariaAPI\\LivrariaAPI.csproj",
         "projectName": "LivrariaAPI",
-        "projectPath": "C:\\Users\\Home\\Desktop\\C-Sharp__Angular-Livraria-do-Marcos\\LivrariaAPI\\LivrariaAPI.csproj",
+        "projectPath": "C:\\Users\\Home\\Desktop\\C-Sharp-EF-MySQL-APIBooks\\LivrariaAPI\\LivrariaAPI.csproj",
         "packagesPath": "C:\\Users\\Home\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Home\\Desktop\\C-Sharp__Angular-Livraria-do-Marcos\\LivrariaAPI\\obj\\",
+        "outputPath": "C:\\Users\\Home\\Desktop\\C-Sharp-EF-MySQL-APIBooks\\LivrariaAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Home\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -76,6 +76,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -84,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

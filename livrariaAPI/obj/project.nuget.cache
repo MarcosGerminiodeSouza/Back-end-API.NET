@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Eb03NqZ6JzQ9DfnUeQNWJTd7vV306bkLT8HquN7ujZPkm8ZG+XWmDpIYNMJ6idMazFXy4ZOw7jZpd+YZn/KUPQ==",
+  "dgSpecHash": "J73s4ac8e9705ZgOMQTAbphf5cz7LZYjS0WoCPFIc6GNvzIa8gPtNzP63eoR7KkdENSEi/ddQ/rGRZj+W3yqKg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Home\\Desktop\\C-Sharp__Angular-Livraria-do-Marcos\\LivrariaAPI\\LivrariaAPI.csproj",
+  "projectFilePath": "C:\\Users\\Home\\Desktop\\C-Sharp-EF-MySQL-APIBooks\\LivrariaAPI\\LivrariaAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Home\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Home\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.13\\microsoft.aspnetcore.openapi.7.0.13.nupkg.sha512",
@@ -33,7 +33,11 @@
     "C:\\Users\\Home\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
     "C:\\Users\\Home\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
     "C:\\Users\\Home\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
-    "C:\\Users\\Home\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
+    "C:\\Users\\Home\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\Home\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
   ],
   "logs": []
 }

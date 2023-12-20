@@ -1,6 +1,6 @@
 # Livraria API com C# e MySQL
 
-API de livros em **C#** do tipo **WebAPI ASP.NET** que armazena a entidade do tipo livro no banco de dados **MySQL** e contendo seus métodos **CRUD** do tipo **Http** no **Swagger**
+API de livros em **C#** do tipo **WebAPI ASP.NET** que armazena a entidade do tipo livro no banco de dados **MySQL** e contendo seus métodos **CRUD** do tipo **Http** no **Swagger** para requisitar no **Angular**
 
 ## LivrariaAPI
 
