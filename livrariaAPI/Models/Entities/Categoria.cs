@@ -6,8 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace livrariaAPI.Models.Entities
 {
-    public class Livro
+    public class Categoria
     {
-        public int LivroId { get; set; }
+        public int CategoriaId { get; set; }
+        public string TipoCategoria { get; set; }
     }
 }

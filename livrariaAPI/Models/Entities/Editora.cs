@@ -6,8 +6,9 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace livrariaAPI.Models.Entities
 {
-    public class Livro
+    public class Editora
     {
-        public int LivroId { get; set; }
+        public int EditoraId { get; set; }
+        public string NomeEditora { get; set; }
     }
 }

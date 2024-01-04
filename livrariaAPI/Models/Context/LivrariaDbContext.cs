@@ -14,7 +14,7 @@ namespace LivrariaAPI.Models.Context
             
         }
 
-        public DbSet<Livro> Livros { get; set; }
+        public DbSet<LivroOld> Livros { get; set; }
         
     }
 }
