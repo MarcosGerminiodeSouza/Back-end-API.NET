@@ -13,6 +13,7 @@ API de livros em **C#** do tipo **WebAPI ASP.NET** que armazena a entidades rela
 - Assinaturas
 - Migrations
 - Lazy Load
+- C. F.
 
 ## VS Code - LivrariaAPI
 
