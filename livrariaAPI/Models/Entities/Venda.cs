@@ -4,16 +4,20 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore.Storage;
 
 namespace livrariaAPI.Models.Entities
 {
     public class Venda
     {
-        [Key()]
-        public int VendaId { get; set; }
+        [Key]
+        public int idt_venda { get; set; }
+
         [ForeignKey("Usuario")]
-        public int UsuarioId { get; set; }
+        public int idt_usuario { get; set; }
         public virtual Usuario Usuario { get; set; }
-        public DateTime DataVenda { get; set; } = DateTime.Now.ToLocalTime();
+
+        [Column(TypeName ="date")]
+        public DateOnly dat_venda { get; set; }
     }
 }

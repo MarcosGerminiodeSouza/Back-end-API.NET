@@ -4,7 +4,7 @@ API de livros em **C#** do tipo **WebAPI ASP.NET** que armazena a entidades rela
 
 - API
 - Entity Framework
-- Cold First
+- Code First
 - Armazenamento em Banco de Dados MySQL
 - Relacionamento de Entre Objetos
 - Virtual

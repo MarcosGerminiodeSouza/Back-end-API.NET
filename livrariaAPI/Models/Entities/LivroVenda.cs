@@ -4,18 +4,27 @@ using System.Linq;
 using System.Threading.Tasks;
 using LivrariaAPI.Models.Entities;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace livrariaAPI.Models.Entities
 {
     public class LivroVenda
     {
-        public int LivroVendaId { get; set; }
-        public Livro Livro { get; set; }
-        public int LivroId { get; set; }
-        public Venda Venda { get; set; }
-        public int VendaId { get; set; }
-        public int QuantidadeLivro { get; set; }
+        [Key]
+        public int idt_livro_venda { get; set; }
+
+        [ForeignKey("Livro")]
+        public int idt_livro { get; set; }
+        public virtual Livro Livro { get; set; }
+
+        [ForeignKey("Venda")]
+        public int idt_venda { get; set; }
+        public virtual Venda Venda { get; set; }
+
+        [Column(TypeName ="int")]
+        public int qtd_livro { get; set; }
+
         [Column(TypeName = "decimal(8, 2)")]
-        public decimal ValorLivro { get; set; }
+        public decimal val_livro { get; set; }
     }
 }

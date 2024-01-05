@@ -8,10 +8,10 @@ using Microsoft.Extensions.Hosting;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-string mySqlConexao = builder.Configuration.GetConnectionString("ConexaoMySQL");
+string conexaoDb = builder.Configuration.GetConnectionString("ConexaoMySQL");
 
 builder.Services.AddDbContextPool<LivrariaDbContext>(options =>
-        options.UseMySql(mySqlConexao, ServerVersion.AutoDetect(mySqlConexao)));
+        options.UseMySql(conexaoDb, ServerVersion.AutoDetect(conexaoDb)));
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

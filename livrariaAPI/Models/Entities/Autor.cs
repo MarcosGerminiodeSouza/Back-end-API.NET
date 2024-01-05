@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace livrariaAPI.Models.Entities
 {
     public class Autor
     {
-        public int AutorId { get; set; }
-        public string NomeAutor { get; set; }
+        [Key]
+        public int idt_autor { get; set; }
+        
+        [Column(TypeName="varchar(45)")]
+        public string nom_autor { get; set; }
     }
 }
