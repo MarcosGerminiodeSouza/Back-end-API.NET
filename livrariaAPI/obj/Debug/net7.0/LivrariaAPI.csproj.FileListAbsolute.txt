@@ -164,3 +164,14 @@ C:\Users\Home\Desktop\C-Sharp-EF-MySQL-APIBooks\LivrariaAPI\obj\Debug\net7.0\ref
 C:\Users\Home\Desktop\C-Sharp-EF-MySQL-APIBooks\LivrariaAPI\obj\Debug\net7.0\LivrariaAPI.pdb
 C:\Users\Home\Desktop\C-Sharp-EF-MySQL-APIBooks\LivrariaAPI\obj\Debug\net7.0\LivrariaAPI.genruntimeconfig.cache
 C:\Users\Home\Desktop\C-Sharp-EF-MySQL-APIBooks\LivrariaAPI\obj\Debug\net7.0\ref\LivrariaAPI.dll
+C:\Users\Home\Desktop\dotnet-ef_usando_MySQL-LivrariaAPI_com_CRUD\livrariaAPI\obj\Debug\net7.0\LivrariaAPI.csproj.AssemblyReference.cache
+C:\Users\Home\Desktop\dotnet-ef_usando_MySQL-LivrariaAPI_com_CRUD\livrariaAPI\obj\Debug\net7.0\LivrariaAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Home\Desktop\dotnet-ef_usando_MySQL-LivrariaAPI_com_CRUD\livrariaAPI\obj\Debug\net7.0\LivrariaAPI.AssemblyInfoInputs.cache
+C:\Users\Home\Desktop\dotnet-ef_usando_MySQL-LivrariaAPI_com_CRUD\livrariaAPI\obj\Debug\net7.0\LivrariaAPI.AssemblyInfo.cs
+C:\Users\Home\Desktop\dotnet-ef_usando_MySQL-LivrariaAPI_com_CRUD\livrariaAPI\obj\Debug\net7.0\LivrariaAPI.csproj.CoreCompileInputs.cache
+C:\Users\Home\Desktop\dotnet-ef_usando_MySQL-LivrariaAPI_com_CRUD\livrariaAPI\obj\Debug\net7.0\LivrariaAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Home\Desktop\dotnet-ef_usando_MySQL-LivrariaAPI_com_CRUD\livrariaAPI\obj\Debug\net7.0\LivrariaAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Home\Desktop\dotnet-ef_usando_MySQL-LivrariaAPI_com_CRUD\livrariaAPI\obj\Debug\net7.0\LivrariaAPI.sourcelink.json
+C:\Users\Home\Desktop\dotnet-ef_usando_MySQL-LivrariaAPI_com_CRUD\livrariaAPI\obj\Debug\net7.0\LivrariaAPI.dll
+C:\Users\Home\Desktop\dotnet-ef_usando_MySQL-LivrariaAPI_com_CRUD\livrariaAPI\obj\Debug\net7.0\refint\LivrariaAPI.dll
+C:\Users\Home\Desktop\dotnet-ef_usando_MySQL-LivrariaAPI_com_CRUD\livrariaAPI\obj\Debug\net7.0\LivrariaAPI.pdb

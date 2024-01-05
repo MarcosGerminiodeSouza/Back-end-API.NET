@@ -1,4 +1,4 @@
-using LivrariaAPI.Models.Context;
+using livrariaAPI.Context;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 string conexaoDb = builder.Configuration.GetConnectionString("ConexaoMySQL");
 
-builder.Services.AddDbContextPool<LivrariaDbContext>(options =>
+builder.Services.AddDbContextPool<LivrariaContext>(options =>
         options.UseMySql(conexaoDb, ServerVersion.AutoDetect(conexaoDb)));
 
 builder.Services.AddControllers();
