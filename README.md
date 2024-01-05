@@ -3,10 +3,10 @@
 API de livros em **C#** do tipo **WebAPI ASP.NET** que armazena a entidades relacionadas banco de dados **MySQL**.
 
 - API
-- Entity Framework
 - Code First
-- dotnet-ef migrations add marcos_livraria_webapi
-- dotnet-ef update database
+- Entity Framework
+    1. dotnet-ef migrations add marcos_livraria_webapi
+    2. dotnet-ef database update
 - Armazenamento em Banco de Dados MySQL
 - Relacionamento de Entre Objetos
 - Virtual
@@ -15,6 +15,10 @@ API de livros em **C#** do tipo **WebAPI ASP.NET** que armazena a entidades rela
 - Migrations
 - Lazy Load
 - CRUD
+    1. Create = Post
+    2. Read = Get
+    3. Update = Put
+    4. Delete = Delete
 
 ## VS Code - LivrariaAPI
 
