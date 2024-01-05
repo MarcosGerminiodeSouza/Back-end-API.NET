@@ -17,6 +17,6 @@ namespace livrariaAPI.Context
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Venda> Vendas { get; set; }
         public DbSet<Livro> Livros { get; set; }
-        public DbSet<LivroVenda> LivroVendas { get; set; }
+        public DbSet<LivroVenda> livro_venda { get; set; }
     }
 }
