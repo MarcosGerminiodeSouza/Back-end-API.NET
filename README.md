@@ -4,16 +4,15 @@ API de livros em **C#** do tipo **WebAPI ASP.NET** que armazena a entidades rela
 
 - API
 - Entity Framework
-- Relacionamento de Entre Objetos
-- CRUD
+- Cold First
 - Armazenamento em Banco de Dados MySQL
-
+- Relacionamento de Entre Objetos
 - Virtual
 - Collection
 - Assinaturas
 - Migrations
 - Lazy Load
-- C. F.
+- CRUD
 
 ## VS Code - LivrariaAPI
 
