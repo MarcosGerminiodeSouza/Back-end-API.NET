@@ -1,4 +1,5 @@
 using livrariaAPI.Context;
+using livrariaAPI.Services.LivroService;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -8,6 +9,8 @@ using Microsoft.Extensions.Hosting;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddScoped<ILivroInterface, LivroService>();
+
 string conexaoDb = builder.Configuration.GetConnectionString("ConexaoMySQL");
 
 builder.Services.AddDbContextPool<LivrariaContext>(options =>
