@@ -34,6 +34,9 @@ namespace livrariaAPI.Services.LivroService
 
                 _context.Add(novoLivro);
                 await _context.SaveChangesAsync();
+
+                serviceResponse.Dados = _context.Livros.ToList();
+                serviceResponse.Menssagem = $"Livro de id: {novoLivro.idt_livro} registrado com sucesso!";
             }
             catch (Exception ex)
             {
@@ -50,10 +53,10 @@ namespace livrariaAPI.Services.LivroService
             try
             {
                 serviceResponse.Dados = _context.Livros.ToList();
-                await _context.SaveChangesAsync(); //tirar aviso de async
+                serviceResponse.Menssagem = $"Total de {serviceResponse.Dados.Count} registros encontrados.";
 
                 if (serviceResponse.Dados.Count == 0)
-                    serviceResponse.Menssagem = "Nenhum dado encontrado!";
+                    serviceResponse.Menssagem = "Nenhum registro encontrado!";
             }
             catch (Exception ex)
             {
@@ -80,7 +83,7 @@ namespace livrariaAPI.Services.LivroService
                 }
 
                 serviceResponse.Dados = livro;
-                await _context.SaveChangesAsync(); //tirar aviso de async
+                serviceResponse.Menssagem = "Livro encontrado com sucesso!";
             }
             catch (Exception ex)
             {
@@ -106,12 +109,11 @@ namespace livrariaAPI.Services.LivroService
                     serviceResponse.Sucesso = false;
                 }
 
-                //IMPLEMENTAR A LOGICA DE ATUALIZAR CASO NECESSARIO
-
                 _context.Livros.Update(editadoLivro);
                 await _context.SaveChangesAsync();
 
                 serviceResponse.Dados = _context.Livros.ToList();
+                serviceResponse.Menssagem = $"Livro id {livro.idt_livro} editado com sucesso!";
             }
             catch (Exception ex)
             {
@@ -143,6 +145,7 @@ namespace livrariaAPI.Services.LivroService
                 await _context.SaveChangesAsync();
 
                 serviceResponse.Dados = _context.Livros.ToList();
+                serviceResponse.Menssagem = $"Livro id {livro.idt_livro} adicionado a lista de lançamentos com sucesso!";
             }
             catch (Exception ex)
             {
@@ -174,6 +177,7 @@ namespace livrariaAPI.Services.LivroService
                 await _context.SaveChangesAsync();
 
                 serviceResponse.Dados = _context.Livros.ToList();
+                serviceResponse.Menssagem = $"Livro id {livro.idt_livro} removido da lista de lançamentos com sucesso!";
             }
             catch (Exception ex)
             {
@@ -203,6 +207,7 @@ namespace livrariaAPI.Services.LivroService
                 await _context.SaveChangesAsync();
 
                 serviceResponse.Dados = _context.Livros.ToList();
+                serviceResponse.Menssagem = $"Livro id {livro.idt_livro} deletado com sucesso!";
             }
             catch (Exception ex)
             {
