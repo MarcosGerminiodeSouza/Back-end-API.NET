@@ -61,7 +61,7 @@ namespace livrariaAPI.Controllers
         {
            ServiceResponse<List<Livro>> serviceResponse = await _livroInterface.EditarLivro(editadoLivro);
 
-            return Ok(serviceResponse); 
+            return Ok(serviceResponse);
         }
 
         [HttpDelete]
