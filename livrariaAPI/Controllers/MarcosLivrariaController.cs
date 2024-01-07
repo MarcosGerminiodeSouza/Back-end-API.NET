@@ -20,13 +20,19 @@ namespace livrariaAPI.Controllers
             _livroInterface = livroInterface;
         }
 
-        [HttpGet]
+        [HttpPost("criarLivro")]
+        public async Task<ActionResult<ServiceResponse<List<Livro>>>> CriarLivro(Livro novoLivro)
+        {
+            return Ok(await _livroInterface.CriarLivro(novoLivro));
+        }
+
+        [HttpGet("obterLivros")]
         public async Task<ActionResult<ServiceResponse<List<Livro>>>> ObterLivros()
         {
             return Ok(await _livroInterface.ObterLivros());
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("obterLivroPorId")]
         public async Task<ActionResult<ServiceResponse<Livro>>> ObterLivroPorId(int id)
         {
             ServiceResponse<Livro> serviceResponse = await _livroInterface.ObterLivroPorId(id);
@@ -34,29 +40,7 @@ namespace livrariaAPI.Controllers
             return Ok(serviceResponse);
         }
 
-        [HttpPost]
-        public async Task<ActionResult<ServiceResponse<List<Livro>>>> CriarLivro(Livro novoLivro)
-        {
-            return Ok(await _livroInterface.CriarLivro(novoLivro));
-        }
-
-        [HttpPut("inativaLancamento")]
-        public async Task<ActionResult<ServiceResponse<List<Livro>>>> InativaLancamentoLivro(int id)
-        {
-            ServiceResponse<List<Livro>> serviceResponse = await _livroInterface.InativaLancamentoLivro(id);
-
-            return Ok(serviceResponse);
-        }
-
-        [HttpPut("ativaLancamento")]
-        public async Task<ActionResult<ServiceResponse<List<Livro>>>> AtivaLancamentoLivro(int id)
-        {
-            ServiceResponse<List<Livro>> serviceResponse = await _livroInterface.AtivaLancamentoLivro(id);
-
-            return Ok(serviceResponse);
-        }
-
-        [HttpPut]
+        [HttpPut("editarLivro")]
         public async Task<ActionResult<ServiceResponse<List<Livro>>>> EditarLivro(Livro editadoLivro)
         {
            ServiceResponse<List<Livro>> serviceResponse = await _livroInterface.EditarLivro(editadoLivro);
@@ -64,7 +48,23 @@ namespace livrariaAPI.Controllers
             return Ok(serviceResponse);
         }
 
-        [HttpDelete]
+        [HttpPut("adicionaLancamentoLivro")]
+        public async Task<ActionResult<ServiceResponse<List<Livro>>>> AdicionaLancamentoLivro(int id)
+        {
+            ServiceResponse<List<Livro>> serviceResponse = await _livroInterface.AdicionaLancamentoLivro(id);
+
+            return Ok(serviceResponse);
+        }
+
+        [HttpPut("removeLancamentoLivro")]
+        public async Task<ActionResult<ServiceResponse<List<Livro>>>> RemoveLancamentoLivro(int id)
+        {
+            ServiceResponse<List<Livro>> serviceResponse = await _livroInterface.RemoveLancamentoLivro(id);
+
+            return Ok(serviceResponse);
+        }
+
+        [HttpDelete("deletarLivro")]
         public async Task<ActionResult<ServiceResponse<List<Livro>>>> DeletarLivro(int id)
         {
             ServiceResponse<List<Livro>> serviceResponse = await _livroInterface.DeletarLivro(id);

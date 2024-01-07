@@ -126,7 +126,7 @@ namespace livrariaAPI.Services.LivroService
             return serviceResponse;
         }
 
-        public async Task<ServiceResponse<List<Livro>>> AtivaLancamentoLivro(int id)
+        public async Task<ServiceResponse<List<Livro>>> AdicionaLancamentoLivro(int id)
         {
             ServiceResponse<List<Livro>> serviceResponse = new ServiceResponse<List<Livro>>();
 
@@ -160,7 +160,7 @@ namespace livrariaAPI.Services.LivroService
             return serviceResponse;
         }
 
-        public async Task<ServiceResponse<List<Livro>>> InativaLancamentoLivro(int id)
+        public async Task<ServiceResponse<List<Livro>>> RemoveLancamentoLivro(int id)
         {
             ServiceResponse<List<Livro>> serviceResponse = new ServiceResponse<List<Livro>>();
 
