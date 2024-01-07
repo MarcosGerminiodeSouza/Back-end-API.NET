@@ -20,7 +20,7 @@ namespace livrariaAPI.Controllers
             _livroInterface = livroInterface;
         }
 
-        [HttpPost("criarLivro")]
+        [HttpPost("criarLivro/{id}")]
         public async Task<ActionResult<ServiceResponse<List<Livro>>>> CriarLivro(Livro novoLivro)
         {
             return Ok(await _livroInterface.CriarLivro(novoLivro));
@@ -32,7 +32,7 @@ namespace livrariaAPI.Controllers
             return Ok(await _livroInterface.ObterLivros());
         }
 
-        [HttpGet("obterLivroPorId")]
+        [HttpGet("obterLivroPorId/{id}")]
         public async Task<ActionResult<ServiceResponse<Livro>>> ObterLivroPorId(int id)
         {
             ServiceResponse<Livro> serviceResponse = await _livroInterface.ObterLivroPorId(id);
@@ -40,7 +40,7 @@ namespace livrariaAPI.Controllers
             return Ok(serviceResponse);
         }
 
-        [HttpPut("editarLivro")]
+        [HttpPut("editarLivro/{id}")]
         public async Task<ActionResult<ServiceResponse<List<Livro>>>> EditarLivro(Livro editadoLivro)
         {
            ServiceResponse<List<Livro>> serviceResponse = await _livroInterface.EditarLivro(editadoLivro);
@@ -48,7 +48,7 @@ namespace livrariaAPI.Controllers
             return Ok(serviceResponse);
         }
 
-        [HttpPut("adicionaLancamentoLivro")]
+        [HttpPut("adicionaLancamentoLivro/{id}")]
         public async Task<ActionResult<ServiceResponse<List<Livro>>>> AdicionaLancamentoLivro(int id)
         {
             ServiceResponse<List<Livro>> serviceResponse = await _livroInterface.AdicionaLancamentoLivro(id);
@@ -56,7 +56,7 @@ namespace livrariaAPI.Controllers
             return Ok(serviceResponse);
         }
 
-        [HttpPut("removeLancamentoLivro")]
+        [HttpPut("removeLancamentoLivro/{id}")]
         public async Task<ActionResult<ServiceResponse<List<Livro>>>> RemoveLancamentoLivro(int id)
         {
             ServiceResponse<List<Livro>> serviceResponse = await _livroInterface.RemoveLancamentoLivro(id);
@@ -64,7 +64,7 @@ namespace livrariaAPI.Controllers
             return Ok(serviceResponse);
         }
 
-        [HttpDelete("deletarLivro")]
+        [HttpDelete("deletarLivro/{id}")]
         public async Task<ActionResult<ServiceResponse<List<Livro>>>> DeletarLivro(int id)
         {
             ServiceResponse<List<Livro>> serviceResponse = await _livroInterface.DeletarLivro(id);
