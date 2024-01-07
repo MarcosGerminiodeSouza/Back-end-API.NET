@@ -35,8 +35,8 @@ namespace livrariaAPI.Services.LivroService
                 _context.Add(novoLivro);
                 await _context.SaveChangesAsync();
 
-                serviceResponse.Dados = _context.Livros.ToList();
-                serviceResponse.Menssagem = $"Livro de id: {novoLivro.idt_livro} registrado com sucesso!";
+                serviceResponse.Dados = await _context.Livros.ToListAsync();
+                serviceResponse.Menssagem = $"Novo livro adicionado a tabela de livros com Id: {novoLivro.idt_livro}";
             }
             catch (Exception ex)
             {
@@ -52,11 +52,8 @@ namespace livrariaAPI.Services.LivroService
             ServiceResponse<List<Livro>> serviceResponse = new ServiceResponse<List<Livro>>();
             try
             {
-                serviceResponse.Dados = _context.Livros.ToList();
-                serviceResponse.Menssagem = $"Total de {serviceResponse.Dados.Count} registros encontrados.";
-
-                if (serviceResponse.Dados.Count == 0)
-                    serviceResponse.Menssagem = "Nenhum registro encontrado!";
+                serviceResponse.Dados = await _context.Livros.ToListAsync();
+                serviceResponse.Menssagem = $"Registros encontrados: ({serviceResponse.Dados.Count})";
             }
             catch (Exception ex)
             {
@@ -73,17 +70,20 @@ namespace livrariaAPI.Services.LivroService
 
             try
             {
-                Livro livro = _context.Livros.FirstOrDefault(x => x.idt_livro == id);
+                Livro livroBanco = await _context.Livros.FirstOrDefaultAsync(x => x.idt_livro == id);
 
-                if (livro == null)
+                if (livroBanco == null)
                 {
                     serviceResponse.Dados = null;
-                    serviceResponse.Menssagem = "Livro não encontrado!";
+                    serviceResponse.Menssagem = $"Nenhum livro encontrado na tabela livros com Id: {id}";
                     serviceResponse.Sucesso = false;
                 }
+                else
+                {
+                    serviceResponse.Dados = livroBanco;
+                    serviceResponse.Menssagem = $"Livro Id: {id} encontrado com sucesso!";
+                }
 
-                serviceResponse.Dados = livro;
-                serviceResponse.Menssagem = "Livro encontrado com sucesso!";
             }
             catch (Exception ex)
             {
@@ -100,20 +100,22 @@ namespace livrariaAPI.Services.LivroService
 
             try
             {
-                Livro livro = _context.Livros.AsNoTracking().FirstOrDefault(x => x.idt_livro == editadoLivro.idt_livro);
+                Livro livroBanco = await _context.Livros.AsNoTracking().FirstOrDefaultAsync(x => x.idt_livro == editadoLivro.idt_livro);
 
-                if (livro == null)
+                if (livroBanco == null)
                 {
                     serviceResponse.Dados = null;
-                    serviceResponse.Menssagem = "Livro não encontrado!";
+                    serviceResponse.Menssagem = $"Nenhum livro encontrado na tabela livros com Id: {editadoLivro.idt_livro}";
                     serviceResponse.Sucesso = false;
                 }
+                else
+                {
+                    _context.Livros.Update(editadoLivro);
+                    await _context.SaveChangesAsync();
 
-                _context.Livros.Update(editadoLivro);
-                await _context.SaveChangesAsync();
-
-                serviceResponse.Dados = _context.Livros.ToList();
-                serviceResponse.Menssagem = $"Livro id {livro.idt_livro} editado com sucesso!";
+                    serviceResponse.Dados = await _context.Livros.ToListAsync();
+                    serviceResponse.Menssagem = $"Edita livro com Id: {livroBanco.idt_livro}";
+                }
             }
             catch (Exception ex)
             {
@@ -130,22 +132,24 @@ namespace livrariaAPI.Services.LivroService
 
             try
             {
-                Livro livro = _context.Livros.FirstOrDefault(x => x.idt_livro == id);
+                Livro livroBanco = await _context.Livros.FirstOrDefaultAsync(x => x.idt_livro == id);
 
-                if (livro == null)
+                if (livroBanco == null)
                 {
                     serviceResponse.Dados = null;
-                    serviceResponse.Menssagem = "Livro não encontrado!";
+                    serviceResponse.Menssagem = $"Nenhum livro encontrado na tabela livros com Id: {id}";
                     serviceResponse.Sucesso = false;                    
                 }
+                else
+                {
+                    livroBanco.ind_lancamento = "s";
 
-                livro.ind_lancamento = "s";
+                    _context.Livros.Update(livroBanco);
+                    await _context.SaveChangesAsync();
 
-                _context.Livros.Update(livro);
-                await _context.SaveChangesAsync();
-
-                serviceResponse.Dados = _context.Livros.ToList();
-                serviceResponse.Menssagem = $"Livro id {livro.idt_livro} adicionado a lista de lançamentos com sucesso!";
+                    serviceResponse.Dados = await _context.Livros.ToListAsync();
+                    serviceResponse.Menssagem = $"Adiciona a lista de lançamentos o livro Id: {livroBanco.idt_livro}";
+                }
             }
             catch (Exception ex)
             {
@@ -162,22 +166,24 @@ namespace livrariaAPI.Services.LivroService
 
             try
             {
-                Livro livro = _context.Livros.FirstOrDefault(x => x.idt_livro == id);
+                Livro livroBanco = await _context.Livros.FirstOrDefaultAsync(x => x.idt_livro == id);
 
-                if (livro == null)
+                if (livroBanco == null)
                 {
                     serviceResponse.Dados = null;
-                    serviceResponse.Menssagem = "Livro não encontrado!";
+                    serviceResponse.Menssagem = $"Nenhum livro encontrado na tabela livros com Id: {id}";
                     serviceResponse.Sucesso = false;                    
                 }
+                else
+                {
+                    livroBanco.ind_lancamento = "n";
 
-                livro.ind_lancamento = "n";
+                    _context.Livros.Update(livroBanco);
+                    await _context.SaveChangesAsync();
 
-                _context.Livros.Update(livro);
-                await _context.SaveChangesAsync();
-
-                serviceResponse.Dados = _context.Livros.ToList();
-                serviceResponse.Menssagem = $"Livro id {livro.idt_livro} removido da lista de lançamentos com sucesso!";
+                    serviceResponse.Dados = await _context.Livros.ToListAsync();
+                    serviceResponse.Menssagem = $"Remove da lista de lançamentos o livro Id: {livroBanco.idt_livro}";
+                }
             }
             catch (Exception ex)
             {
@@ -194,20 +200,22 @@ namespace livrariaAPI.Services.LivroService
 
             try
             {
-                Livro livro = _context.Livros.FirstOrDefault(x => x.idt_livro == id);
+                Livro livro = await _context.Livros.FirstOrDefaultAsync(x => x.idt_livro == id);
 
                 if (livro == null)
                 {
                     serviceResponse.Dados = null;
-                    serviceResponse.Menssagem = "Livro não encontrado!";
+                    serviceResponse.Menssagem = $"Nenhum livro encontrado na tabela livros com Id: {id}";
                     serviceResponse.Sucesso = false;                    
                 }
+                else
+                {
+                    _context.Livros.Remove(livro);
+                    await _context.SaveChangesAsync();
 
-                _context.Livros.Remove(livro);
-                await _context.SaveChangesAsync();
-
-                serviceResponse.Dados = _context.Livros.ToList();
-                serviceResponse.Menssagem = $"Livro id {livro.idt_livro} deletado com sucesso!";
+                    serviceResponse.Dados = await _context.Livros.ToListAsync();
+                    serviceResponse.Menssagem = $"Deletado livro com Id: {id}";
+                }
             }
             catch (Exception ex)
             {
