@@ -9,10 +9,14 @@ using Microsoft.Extensions.Hosting;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+// Adicionando referências aos serviços e Interfaces:
 builder.Services.AddScoped<ILivroInterface, LivroService>();
 
+// Adicionando credencias do MySQL:
 string conexaoDb = builder.Configuration.GetConnectionString("ConexaoMySQL");
 
+// Conectando com Banco de Dados mySQL:
 builder.Services.AddDbContextPool<LivrariaContext>(options =>
         options.UseMySql(conexaoDb, ServerVersion.AutoDetect(conexaoDb)));
 
@@ -29,6 +33,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+// Adicionando a configuração para o CORS:
+app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
 app.UseHttpsRedirection();
 
