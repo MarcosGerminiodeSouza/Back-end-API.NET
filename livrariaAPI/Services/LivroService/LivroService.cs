@@ -81,7 +81,7 @@ namespace livrariaAPI.Services.LivroService
                 else
                 {
                     serviceResponse.Dados = livroBanco;
-                    serviceResponse.Menssagem = $"Livro Id: {id} encontrado com sucesso!";
+                    serviceResponse.Menssagem = "Livro encontrado!";
                 }
 
             }
@@ -200,9 +200,9 @@ namespace livrariaAPI.Services.LivroService
 
             try
             {
-                Livro livro = await _context.Livros.FirstOrDefaultAsync(x => x.idt_livro == id);
+                Livro livroBanco = await _context.Livros.FirstOrDefaultAsync(x => x.idt_livro == id);
 
-                if (livro == null)
+                if (livroBanco == null)
                 {
                     serviceResponse.Dados = null;
                     serviceResponse.Menssagem = $"Nenhum livro encontrado na tabela livros com Id: {id}";
@@ -210,11 +210,11 @@ namespace livrariaAPI.Services.LivroService
                 }
                 else
                 {
-                    _context.Livros.Remove(livro);
+                    _context.Livros.Remove(livroBanco);
                     await _context.SaveChangesAsync();
 
                     serviceResponse.Dados = await _context.Livros.ToListAsync();
-                    serviceResponse.Menssagem = $"Deletado livro com Id: {id}";
+                    serviceResponse.Menssagem = $"Deleta livro com Id: {id}";
                 }
             }
             catch (Exception ex)
