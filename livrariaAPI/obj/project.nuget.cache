@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7sdwmiBlPKGnvRXr9aTjXl6SDoqX1J4YUxBuS6h06CT4V7bKViTESeRy0vS+oD/1gdKh0FHXZhOQj2WNik1jkw==",
+  "dgSpecHash": "OxHhHHWDA2cc5YC7dyhRJDL0oWsKe3lO/QY4gUdSIiKiQthI+Xoctb0osQO6sOkHw65GLPLtU/Cxq0zhEl/78w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Home\\Desktop\\dotnet-ef_usando_MySQL-LivrariaAPI_com_CRUD\\livrariaAPI\\LivrariaAPI.csproj",
+  "projectFilePath": "C:\\Users\\Home\\Workspace\\Github\\Angular-MySQL-.NET-MarcosBookstore-Projeto\\Back-end-API.NET\\livrariaAPI\\LivrariaAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Home\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Home\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.13\\microsoft.aspnetcore.openapi.7.0.13.nupkg.sha512",

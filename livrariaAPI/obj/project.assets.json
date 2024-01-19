@@ -1487,11 +1487,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Home\\Desktop\\dotnet-ef_usando_MySQL-LivrariaAPI_com_CRUD\\livrariaAPI\\LivrariaAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Home\\Workspace\\Github\\Angular-MySQL-.NET-MarcosBookstore-Projeto\\Back-end-API.NET\\livrariaAPI\\LivrariaAPI.csproj",
       "projectName": "LivrariaAPI",
-      "projectPath": "C:\\Users\\Home\\Desktop\\dotnet-ef_usando_MySQL-LivrariaAPI_com_CRUD\\livrariaAPI\\LivrariaAPI.csproj",
+      "projectPath": "C:\\Users\\Home\\Workspace\\Github\\Angular-MySQL-.NET-MarcosBookstore-Projeto\\Back-end-API.NET\\livrariaAPI\\LivrariaAPI.csproj",
       "packagesPath": "C:\\Users\\Home\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Home\\Desktop\\dotnet-ef_usando_MySQL-LivrariaAPI_com_CRUD\\livrariaAPI\\obj\\",
+      "outputPath": "C:\\Users\\Home\\Workspace\\Github\\Angular-MySQL-.NET-MarcosBookstore-Projeto\\Back-end-API.NET\\livrariaAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Home\\AppData\\Roaming\\NuGet\\NuGet.Config",
