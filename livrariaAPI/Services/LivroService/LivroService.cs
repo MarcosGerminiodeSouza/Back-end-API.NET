@@ -17,7 +17,7 @@ namespace livrariaAPI.Services.LivroService
         {
             _context = context;
         }
-        public async Task<ServiceResponse<List<Livro>>> CriarLivro(Livro novoLivro)
+        public async Task<ServiceResponse<List<Livro>>> InserirNovoLivro(Livro novoLivro)
         {
             ServiceResponse<List<Livro>> serviceResponse = new ServiceResponse<List<Livro>>();
 

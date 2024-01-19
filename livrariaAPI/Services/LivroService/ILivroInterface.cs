@@ -9,7 +9,7 @@ namespace livrariaAPI.Services.LivroService
 {
     public interface ILivroInterface
     {
-        Task<ServiceResponse<List<Livro>>> CriarLivro(Livro novoLivro);
+        Task<ServiceResponse<List<Livro>>> InserirNovoLivro(Livro novoLivro);
         Task<ServiceResponse<List<Livro>>> ObterLivros();
         Task<ServiceResponse<Livro>> ObterLivroPorId(int id);
         Task<ServiceResponse<List<Livro>>> EditarLivro(Livro editadoLivro);

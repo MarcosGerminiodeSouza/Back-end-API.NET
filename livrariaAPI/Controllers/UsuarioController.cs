@@ -19,7 +19,7 @@ namespace livrariaAPI.Controllers
             _usuarioInterface = usuarioInterface;
         }
 
-        [HttpPost("criar/{id}")]
+        [HttpPost("criar")]
         public async Task<ActionResult<ServiceResponse<List<Usuario>>>> CriarUsuario(Usuario novoUsuario)
         {
             return Ok(await _usuarioInterface.CriarUsuario(novoUsuario));

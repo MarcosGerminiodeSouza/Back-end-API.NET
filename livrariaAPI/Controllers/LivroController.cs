@@ -20,10 +20,10 @@ namespace livrariaAPI.Controllers
             _livroInterface = livroInterface;
         }
 
-        [HttpPost("criar/{id}")]
-        public async Task<ActionResult<ServiceResponse<List<Livro>>>> CriarLivro(Livro novoLivro)
+        [HttpPost("criar")]
+        public async Task<ActionResult<ServiceResponse<List<Livro>>>> InserirNovoLivro(Livro novoLivro)
         {
-            return Ok(await _livroInterface.CriarLivro(novoLivro));
+            return Ok(await _livroInterface.InserirNovoLivro(novoLivro));
         }
 
         [HttpGet("obter")]
@@ -40,7 +40,7 @@ namespace livrariaAPI.Controllers
             return Ok(serviceResponse);
         }
 
-        [HttpPut("editar/{id}")]
+        [HttpPut("editar")]
         public async Task<ActionResult<ServiceResponse<List<Livro>>>> EditarLivro(Livro editadoLivro)
         {
            ServiceResponse<List<Livro>> serviceResponse = await _livroInterface.EditarLivro(editadoLivro);

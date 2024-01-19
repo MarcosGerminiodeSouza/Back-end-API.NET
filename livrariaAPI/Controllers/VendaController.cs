@@ -19,7 +19,7 @@ namespace livrariaAPI.Controllers
             _vendaInterface = vendaInterface;
         }
 
-        [HttpPost("criar/{id}")]
+        [HttpPost("criar")]
         public async Task<ActionResult<ServiceResponse<List<Venda>>>> CriarVenda(Venda novaVenda)
         {
             return Ok(await _vendaInterface.CriarVenda(novaVenda));
