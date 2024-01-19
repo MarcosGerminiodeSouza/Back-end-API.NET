@@ -1,5 +1,11 @@
 using livrariaAPI.Context;
+using livrariaAPI.Services.AutorService;
+using livrariaAPI.Services.CategoriaService;
+using livrariaAPI.Services.EditoraService;
 using livrariaAPI.Services.LivroService;
+using livrariaAPI.Services.LivroVendaService;
+using livrariaAPI.Services.UsuarioService;
+using livrariaAPI.Services.VendaService;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -12,6 +18,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Adicionando referências aos serviços e Interfaces:
 builder.Services.AddScoped<ILivroInterface, LivroService>();
+builder.Services.AddScoped<IUsuarioInterface, UsuarioService>();
+builder.Services.AddScoped<IAutorInterface, AutorService>();
+builder.Services.AddScoped<IEditoraInterface, EditoraService>();
+builder.Services.AddScoped<ICategoriaInterface, CategoriaService>();
+builder.Services.AddScoped<ILivroVendaInterface, LivroVendaService>();
+builder.Services.AddScoped<IVendaInterface, VendaService>();
 
 // Adicionando credencias do MySQL:
 string conexaoDb = builder.Configuration.GetConnectionString("ConexaoMySQL");
