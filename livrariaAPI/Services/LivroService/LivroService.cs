@@ -64,6 +64,26 @@ namespace livrariaAPI.Services.LivroService
             return serviceResponse;
         }
 
+        public async Task<ServiceResponse<List<Livro>>> ObterLancamentos()
+        {
+            ServiceResponse<List<Livro>> serviceResponse = new ServiceResponse<List<Livro>>();
+            try
+            {
+                serviceResponse.Dados = await _context.Livros
+                    .Where(l => l.ind_lancamento == "s")
+                    .ToListAsync();
+
+                serviceResponse.Menssagem = $"Registros encontrados: ({serviceResponse.Dados.Count})";
+            }
+            catch (Exception ex)
+            {
+                serviceResponse.Menssagem = ex.Message;
+                serviceResponse.Sucesso = false;
+            }
+
+            return serviceResponse;
+        }
+
         public async Task<ServiceResponse<Livro>> ObterLivroPorId(int id)
         {
             ServiceResponse<Livro> serviceResponse = new ServiceResponse<Livro>();
@@ -115,74 +135,6 @@ namespace livrariaAPI.Services.LivroService
 
                     serviceResponse.Dados = await _context.Livros.ToListAsync();
                     serviceResponse.Menssagem = $"Edita livro com Id: {livroBanco.idt_livro}";
-                }
-            }
-            catch (Exception ex)
-            {
-                serviceResponse.Menssagem = ex.Message;
-                serviceResponse.Sucesso = false;
-            }
-
-            return serviceResponse;
-        }
-
-        public async Task<ServiceResponse<List<Livro>>> AdicionaLancamentoLivro(int id)
-        {
-            ServiceResponse<List<Livro>> serviceResponse = new ServiceResponse<List<Livro>>();
-
-            try
-            {
-                Livro livroBanco = await _context.Livros.FirstOrDefaultAsync(x => x.idt_livro == id);
-
-                if (livroBanco == null)
-                {
-                    serviceResponse.Dados = null;
-                    serviceResponse.Menssagem = $"Nenhum livro encontrado na tabela livros com Id: {id}";
-                    serviceResponse.Sucesso = false;                    
-                }
-                else
-                {
-                    livroBanco.ind_lancamento = "s";
-
-                    _context.Livros.Update(livroBanco);
-                    await _context.SaveChangesAsync();
-
-                    serviceResponse.Dados = await _context.Livros.ToListAsync();
-                    serviceResponse.Menssagem = $"Adiciona a lista de lançamentos o livro Id: {livroBanco.idt_livro}";
-                }
-            }
-            catch (Exception ex)
-            {
-                serviceResponse.Menssagem = ex.Message;
-                serviceResponse.Sucesso = false;
-            }
-
-            return serviceResponse;
-        }
-
-        public async Task<ServiceResponse<List<Livro>>> RemoveLancamentoLivro(int id)
-        {
-            ServiceResponse<List<Livro>> serviceResponse = new ServiceResponse<List<Livro>>();
-
-            try
-            {
-                Livro livroBanco = await _context.Livros.FirstOrDefaultAsync(x => x.idt_livro == id);
-
-                if (livroBanco == null)
-                {
-                    serviceResponse.Dados = null;
-                    serviceResponse.Menssagem = $"Nenhum livro encontrado na tabela livros com Id: {id}";
-                    serviceResponse.Sucesso = false;                    
-                }
-                else
-                {
-                    livroBanco.ind_lancamento = "n";
-
-                    _context.Livros.Update(livroBanco);
-                    await _context.SaveChangesAsync();
-
-                    serviceResponse.Dados = await _context.Livros.ToListAsync();
-                    serviceResponse.Menssagem = $"Remove da lista de lançamentos o livro Id: {livroBanco.idt_livro}";
                 }
             }
             catch (Exception ex)

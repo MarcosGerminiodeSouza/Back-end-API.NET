@@ -11,10 +11,9 @@ namespace livrariaAPI.Services.LivroService
     {
         Task<ServiceResponse<List<Livro>>> InserirNovoLivro(Livro novoLivro);
         Task<ServiceResponse<List<Livro>>> ObterLivros();
+        Task<ServiceResponse<List<Livro>>> ObterLancamentos();
         Task<ServiceResponse<Livro>> ObterLivroPorId(int id);
         Task<ServiceResponse<List<Livro>>> EditarLivro(Livro editadoLivro);
-        Task<ServiceResponse<List<Livro>>> AdicionaLancamentoLivro(int id);
-        Task<ServiceResponse<List<Livro>>> RemoveLancamentoLivro(int id);
         Task<ServiceResponse<List<Livro>>> DeletarLivro(int id);
     }
 }
